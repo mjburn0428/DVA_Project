@@ -14,3 +14,30 @@ content-type: application/json
         "flights": "1552",
         "pilotID": "DVA7758"
 }
+
+
+
+
+
+
+
+
+// PRODUCTION Deploy
+
+### Get all contacts on production
+GET https://dva-project.onrender.com/pilots HTTP/1.1
+
+
+### Create contact on production
+POST https://dva-project.onrender.com/pilots HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Ken ",
+        "lastName": "Webber",
+        "networkID": "1333821",
+        "flights": "332",
+        "pilotID": "DVA12746"
+}
+
+
