@@ -8,11 +8,11 @@ POST http://localhost:8080/pilots HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Salem ",
-        "lastName": "Gbian",
-        "networkID": "1096218",
-        "flights": "1552",
-        "pilotID": "DVA7758"
+        "firstName": "Andres ",
+        "lastName": "Honegger",
+        "networkID": "1222330",
+        "flights": "3717",
+        "pilotID": "DVA11156"
 }
 
 
@@ -33,11 +33,11 @@ POST https://dva-project.onrender.com/pilots HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Ken ",
-        "lastName": "Webber",
-        "networkID": "1333821",
-        "flights": "332",
-        "pilotID": "DVA12746"
+        "firstName": "Scott ",
+        "lastName": "Williams",
+        "networkID": "980239",
+        "flights": "6704",
+        "pilotID": "DVA4176"
 }
 
 
