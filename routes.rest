@@ -1,0 +1,16 @@
+// LOCALHOST
+###
+GET http://localhost:8080/
+###
+
+### Create contact
+POST http://localhost:8080/pilots HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Salem ",
+        "lastName": "Gbian",
+        "networkID": "1096218",
+        "flights": "1552",
+        "pilotID": "DVA7758"
+}
