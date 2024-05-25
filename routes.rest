@@ -1,6 +1,6 @@
 // LOCALHOST
 ###
-GET http://localhost:8080/
+GET http://localhost:8080/pilots
 ###
 
 ### Create contact
