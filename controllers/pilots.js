@@ -34,7 +34,7 @@ const createPilot = async (req, res) => {
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(400).json(response.error || 'Some error occurred while creating the contact.');
   }
 };
 
@@ -56,7 +56,7 @@ const updatePilot = async (req, res) => {
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    res.status(400).json(response.error || 'Some error occurred while updating the contact.');
   }
 };
 
