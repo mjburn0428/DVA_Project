@@ -3,7 +3,10 @@
 GET http://localhost:8080/pilots
 ###
 
-### Create contact
+### Get Pilot by ID. 
+GET http://localhost:8080/pilots/664febe76317b3b4fde53ce4
+
+### Create pilot
 POST http://localhost:8080/pilots HTTP/1.1
 content-type: application/json
 
@@ -15,7 +18,7 @@ content-type: application/json
         "pilotID": "DVA11156"
 }
 ### PUT pilot
-PUT http://localhost:8080/pilots/6657f9ac5b2d8400508ea3d8 HTTP/1.1
+PUT http://localhost:8080/pilots/6657fde23161a6fc6419a6cc HTTP/1.1
 content-type: application/json
 
 {
@@ -27,7 +30,7 @@ content-type: application/json
 }
 
 ### DELETE Pilot
-DELETE http://localhost:8080/pilots/6657f7a018557b921cd8601e
+DELETE http://localhost:8080/pilots/6657f9ac5b2d8400508ea3d8
 
 {
         "firstName": "Andres ",
@@ -46,8 +49,11 @@ DELETE http://localhost:8080/pilots/6657f7a018557b921cd8601e
 ### Get all pilots on production
 GET https://dva-project.onrender.com/pilots HTTP/1.1
 
+### Get pilot by id
+GET https://dva-project.onrender.com/pilots/664febe76317b3b4fde53ce4 HTTP/1.1
 
-### Create pilotd on production
+
+### Create pilots on production
 POST https://dva-project.onrender.com/pilots HTTP/1.1
 content-type: application/json
 
