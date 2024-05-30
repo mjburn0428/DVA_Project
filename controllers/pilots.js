@@ -40,7 +40,7 @@ const createPilot = async (req, res) => {
 
 const updatePilot = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const contact = {
+  const pilot = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     networkID: req.body.networkID,
