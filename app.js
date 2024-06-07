@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 // Routes
-app.use('/pilots', require('./routes/pilots'));
+app.use('/', require('./routes/pilots'));
 
 mongodb.initDb((err) => {
   if (err) {
