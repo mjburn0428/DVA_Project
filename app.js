@@ -12,9 +12,9 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.SECRET, // Store secrets in environment variables
-  baseURL: 'https://localhost:8080',
-  clientID: process.env.CLIENT_ID, // Store sensitive data in environment variables
-  issuerBaseURL: process.env.ISSUER_BASE_URL // Store sensitive data in environment variables
+  baseURL: 'http://localhost:8080',
+  clientID: 'zIZjKqfuHCg9aseWc4di387kVhMs7jkq',
+  issuerBaseURL: 'https://dev-yr1gbq8peoglz5gh.us.auth0.com'
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
