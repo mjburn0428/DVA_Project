@@ -12,7 +12,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.SECRET, // Store secrets in environment variables
-  baseURL: 'https://dva-project.onrender.com',
+  baseURL: 'https://localhost:8080',
   clientID: process.env.CLIENT_ID, // Store sensitive data in environment variables
   issuerBaseURL: process.env.ISSUER_BASE_URL // Store sensitive data in environment variables
 };
