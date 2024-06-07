@@ -12,7 +12,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.SECRET, // Ensure this is set in the environment variables
-  baseURL: process.env.BASE_URL || 'http://localhost:8080',
+  baseURL: process.env.BASE_URL || 'https://dva-project.onrender.com',
   clientID: process.env.CLIENT_ID, // Ensure this is set in the environment variables
   issuerBaseURL: process.env.ISSUER_BASE_URL // Ensure this is set in the environment variables
 };
