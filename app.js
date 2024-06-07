@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
 
-// Routes
+// Routes to use for Auth Login
 app.use('/', require('./routes/pilots'));
 
 mongodb.initDb((err) => {
