@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 // Routes to use for Auth Login
-app.use('/', require('./routes/pilots'));
+app.use('/pilots', require('./routes/pilots'));
 
 mongodb.initDb((err) => {
   if (err) {
