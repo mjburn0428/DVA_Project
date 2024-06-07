@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
 
-// Routes
+// Routes for AuthO to require login.
 app.use('/pilots', require('./routes/pilots'));
 
 mongodb.initDb((err) => {
