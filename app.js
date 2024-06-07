@@ -12,9 +12,9 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.SECRET, // Store secrets in environment variables
-  baseURL: 'http://localhost:8080',
-  clientID: 'zIZjKqfuHCg9aseWc4di387kVhMs7jkq',
-  issuerBaseURL: 'https://dev-yr1gbq8peoglz5gh.us.auth0.com'
+  baseURL: process.env.BASE_URL || 'http://localhost:8080',
+  clientID: process.env.CLIENT_ID, // Store sensitive data in environment variables
+  issuerBaseURL: process.env.ISSUER_BASE_URL // Store sensitive data in environment variables
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
 
-// Routes for AuthO to require login.
+// Routes
 app.use('/pilots', require('./routes/pilots'));
 
 mongodb.initDb((err) => {
