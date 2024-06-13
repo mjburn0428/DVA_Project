@@ -28,6 +28,9 @@ app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
 
+// Main routes file.
+app.use('/', require('./routes'));
+
 // Routes to use for Auth Login
 app.use('/pilots', require('./routes/pilots'));
 
