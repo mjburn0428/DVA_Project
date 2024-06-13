@@ -41,7 +41,17 @@ DELETE http://localhost:8080/pilots/6657f9ac5b2d8400508ea3d8
 }
 
 
+### Create pilot
+POST http://localhost:8080/ivao HTTP/1.1
+content-type: application/json
 
+{
+        "firstName": "Andres ",
+        "lastName": "Hoeger",
+        "networkID": "1222330",
+        "flights": "3717",
+        "pilotID": "DVA11156"
+}
 
 
 // PRODUCTION Deploy
