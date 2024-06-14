@@ -87,6 +87,9 @@ GET https://dva-project.onrender.com/pilots HTTP/1.1
 ### Get all pilots on ivao on production
 GET https://dva-project.onrender.com/ivao HTTP/1.1
 
+### Get all pilots on Pilot Edge on production
+GET https://dva-project.onrender.com/pe HTTP/1.1
+
 ### Get pilot by id
 GET https://dva-project.onrender.com/pilots/664febe76317b3b4fde53ce4 HTTP/1.1
 
@@ -104,21 +107,6 @@ content-type: application/json
 }
 
 
-### PUT contact on production
-PUT https://dva-project.onrender.com/pilots HTTP/1.1
-content-type: application/json
-
-{
-        "firstName": "Scott ",
-        "lastName": "Williams",
-        "networkID": "980239",
-        "flights": "6704",
-        "pilotID": "DVA4176"
-}
-
-### DELETE contact on production
-DELETE https://dva-project.onrender.com/pilots HTTP/1.1
-
 ### Create pilots on production
 POST https://dva-project.onrender.com/ivao HTTP/1.1
 content-type: application/json
@@ -132,6 +120,31 @@ content-type: application/json
 }
 
 
+
+### Create pilots on production
+POST https://dva-project.onrender.com/pe HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Jim",
+        "lastName": "Warner",
+        "networkID": "938171",
+        "flights": "1762",
+        "pilotID": "DVA2533"
+}
+
+### PUT contact on production
+PUT https://dva-project.onrender.com/pilots HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Scott ",
+        "lastName": "Williams",
+        "networkID": "980239",
+        "flights": "6704",
+        "pilotID": "DVA4176"
+}
+
 ### PUT contact on production
 PUT https://dva-project.onrender.com/ivao HTTP/1.1
 content-type: application/json
@@ -144,5 +157,23 @@ content-type: application/json
         "pilotID": "DVA4176"
 }
 
-### DELETE contact on production
+### PUT contact on production
+PUT https://dva-project.onrender.com/pe HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Scott ",
+        "lastName": "Williams",
+        "networkID": "980239",
+        "flights": "6704",
+        "pilotID": "DVA4176"
+}
+
+### DELETE pilot on production
 DELETE https://dva-project.onrender.com/pilots HTTP/1.1
+
+### DELETE Ivao pilot on production
+DELETE https://dva-project.onrender.com/ivao HTTP/1.1
+
+### DELETE Pilot Edge pilot on production
+DELETE https://dva-project.onrender.com/pe HTTP/1.1
