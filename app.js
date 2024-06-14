@@ -37,6 +37,9 @@ app.use('/pilots', require('./routes/pilots'));
 // Routes to use for Auth Login IVAO
 app.use('/ivao', require('./routes/ivao'));
 
+// Routes to use for Auth Login IVAO
+app.use('/pe', require('./routes/pe'));
+
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
