@@ -30,7 +30,7 @@ const createPEPilot = async (req, res) => {
     flights: req.body.flights,
     pilotID: req.body.pilotID
   };
-  const response = await mongodb.getDb().db().collection('PE').insertOne(pilot);
+  const response = await mongodb.getDb().db().collection('pe').insertOne(pilot);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
