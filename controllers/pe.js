@@ -2,7 +2,7 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getPE = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('PE').find();
+  const result = await mongodb.getDb().db().collection('pe').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -14,7 +14,7 @@ const getonePE = async (req, res, next) => {
   const result = await mongodb
     .getDb()
     .db()
-    .collection('PE')
+    .collection('pe')
     .find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -50,7 +50,7 @@ const updatePEPilot = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db()
-    .collection('PE')
+    .collection('pe')
     .replaceOne({ _id: userId }, pilot);
   console.log(response);
   if (response.modifiedCount > 0) {
@@ -62,7 +62,7 @@ const updatePEPilot = async (req, res) => {
 
 const deletePEPilot = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('ivao').deleteOne({ _id: userId }, true);
+  const response = await mongodb.getDb().db().collection('pe').deleteOne({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(200).send();
