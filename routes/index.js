@@ -8,7 +8,7 @@ router.use('/pilots', require('./pilots'))
 router.use('/ivao', require('./ivao'))
 
 //Pilot Edge pilots route
-router.use('/ivao', require('./pe'))
+router.use('/pe', require('./pe'))
 
 //swagger route
 router.use('/', require('./swagger'));
